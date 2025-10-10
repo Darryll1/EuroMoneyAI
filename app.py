@@ -3,7 +3,8 @@ import numpy as np
 from PIL import Image
 from tensorflow.keras.preprocessing.image import img_to_array
 import tensorflow as tf
-import time  # <- Pour mesurer le temps
+import time 
+import gdown
 
 
 
@@ -19,12 +20,19 @@ int_to_class = {
 }
 
 # Charger le meilleur modèle sauvegardé
-#best_model = tf.keras.models.load_model(f"{save_dir}/best_model5_trial_18.keras")
+#https://drive.google.com/file/d/1LhMbNC-IZXmC38xwB1lAYQARd7wX-gYL/view?usp=drive_link
 
 
-# Chemin relatif au dépôt
+#Téléchargement du modèle depuis Google Drive car > 100 Mo
+url = "https://drive.google.com/uc?id=1LhMbNC-IZXmC38xwB1lAYQARd7wX-gYL"  
 model_path = "saved_models/best_model5_trial_18.keras"
 
+os.makedirs("saved_models", exist_ok=True)
+if not os.path.exists(model_path):
+    with st.spinner("Téléchargement du modèle depuis Google Drive..."):
+        gdown.download(url, model_path, quiet=False)
+
+# --- Chargement du modèle ---
 best_model = tf.keras.models.load_model(model_path)
 
 #INTERFACE
