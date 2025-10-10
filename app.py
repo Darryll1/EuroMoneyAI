@@ -22,9 +22,6 @@ int_to_class = {
 # Charger le meilleur modèle sauvegardé
 #best_model = tf.keras.models.load_model(f"{save_dir}/best_model5_trial_18.keras")
 
-#conv_base = VGG16(weights='imagenet',
-                  include_top=False,
-                  input_shape=(150, 150, 3))
 
 # Chemin relatif au dépôt
 model_path = "saved_models/best_model5_trial_18.keras"
