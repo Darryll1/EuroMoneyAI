@@ -5,8 +5,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import tensorflow as tf
 import time  # <- Pour mesurer le temps
 
-# Dossier où les modèles sont sauvegardés
-save_dir = "/content/drive/MyDrive/saved_models/detection_euro"
+
 
 int_to_class = {
     0: "10c",
