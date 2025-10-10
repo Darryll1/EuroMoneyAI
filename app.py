@@ -20,10 +20,14 @@ int_to_class = {
 }
 
 # Charger le meilleur modèle sauvegardé
-best_model = tf.keras.models.load_model(f"{save_dir}/best_model5_trial_18.keras")
+#best_model = tf.keras.models.load_model(f"{save_dir}/best_model5_trial_18.keras")
+# Chemin relatif au dépôt
+model_path = "saved_models/best_model5_trial_18.keras"
 
-# --- INTERFACE ---
-st.set_page_config(page_title="Prédicteur de pièces d'euro", page_icon="💶", layout="centered")
+best_model = tf.keras.models.load_model(model_path)
+
+#INTERFACE
+st.set_page_config(page_title="Prédicteur de pièces d'euro", page_icon="€", layout="centered")
 st.title("Prédicteur de pièces d'euro")
 st.write("Téléverse une image d’une pièce pour obtenir sa valeur prédite.")
 
