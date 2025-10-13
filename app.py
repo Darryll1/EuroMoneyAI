@@ -21,11 +21,11 @@ int_to_class = {
 }
 
 # Charger le meilleur modèle sauvegardé
-#https://drive.google.com/file/d/19GeWMWHvNWUIzFfhFH1RGjnDLfn2eXcP/view?usp=drive_link
+#https://drive.google.com/file/d/1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn/view?usp=sharing
 
 
 #Téléchargement du modèle depuis Google Drive car > 100 Mo
-url = "https://drive.google.com/uc?id=19GeWMWHvNWUIzFfhFH1RGjnDLfn2eXcP"  
+url = "https://drive.google.com/uc?id=1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn"  
 model_path = "saved_models_final/best_model5_final.keras"
 
 os.makedirs("saved_models_final", exist_ok=True)
