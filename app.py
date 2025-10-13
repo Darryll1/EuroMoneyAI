@@ -21,26 +21,14 @@ int_to_class = {
 }
 
 # Charger le meilleur modèle sauvegardé
-#https://drive.google.com/file/d/1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn/view?usp=sharing
 
 
-#Téléchargement du modèle depuis Google Drive car > 100 Mo
-url = "https://drive.google.com/uc?id=1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn"  
-model_path = "saved_models_final/best_model5_final.keras"
+url = "https://drive.google.com/uc?id=1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn"
+output = "best_model5_final_compatible.h5"
+gdown.download(url, output, quiet=False)
 
-os.makedirs("saved_models_final", exist_ok=True)
-if not os.path.exists(model_path):
-    with st.spinner("Téléchargement du modèle depuis Google Drive..."):
-        gdown.download(url, model_path, quiet=False)
-        
-st.write(f"Taille du fichier modèle : {os.path.getsize(model_path) / (1024*1024):.2f} Mo")
+best_model = tf.keras.models.load_model("best_model5_final_compatible")
 
-# --- Chargement du modèle ---
-best_model = tf.keras.models.load_model(model_path)
-
-#model_path = "saved_models/best_model5_trial_18.keras"
-
-#best_model = tf.keras.models.load_model(model_path)
 
 #INTERFACE
 st.set_page_config(page_title="Prédicteur de pièces d'euro", page_icon="€", layout="centered")
