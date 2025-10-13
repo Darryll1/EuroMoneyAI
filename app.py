@@ -22,26 +22,6 @@ file_id = "17r6xrf0vM7wNMrPSaGv8xqUV0cuOl6OE"
 output = "saved_models/model_weights_final.weights.h5"
 gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
 
-#WEIGHTS_URL = "https://drive.google.com/uc?id=17r6xrf0vM7wNMrPSaGv8xqUV0cuOl6OE"
-#WEIGHTS_PATH = "saved_models/model_weights_final.weights.h5"
-
-# Télécharger le fichier si absent
-# Télécharger le fichier si absent
-#if not os.path.exists(WEIGHTS_PATH):
-#    r = requests.get(WEIGHTS_URL, stream=True)
-#    r.raise_for_status()
-#    with open(WEIGHTS_PATH, "wb") as f:
-#        for chunk in r.iter_content(chunk_size=8192):
-#            f.write(chunk)
-
-# Vérifier que le fichier téléchargé est bien un vrai fichier HDF5
-if os.path.exists(output):
-    size = os.path.getsize(output)
-    st.write(f"Fichier téléchargé : {output} ({size/1024:.1f} Ko)")
-    with open(output, "rb") as f:
-        st.code(f.read(200))  # affiche les 200 premiers octets
-
-
 # Recréer VGG16 + Dense comme à l'entraînement
 conv_base = VGG16(weights='imagenet', include_top=False, input_shape=(150,150,3))
 conv_base.trainable = False 
