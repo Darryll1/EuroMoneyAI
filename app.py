@@ -7,7 +7,6 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import requests
 import os
 import time
-!pip install gdown
 import gdown
 
 
