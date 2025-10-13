@@ -24,10 +24,10 @@ int_to_class = {
 #https://drive.google.com/file/d/1IBnroYeiJY_NSDS-DDO0kKYqn-loS6Ic/view?usp=drive_link
 
 url = "https://drive.google.com/uc?id=1IBnroYeiJY_NSDS-DDO0kKYqn-loS6Ic"
-output = "best_model5_final_compatible.h5"
+output = "best_model5_final_compatible_tf2.18.h5"
 gdown.download(url, output, quiet=False)
 
-best_model = tf.keras.models.load_model("best_model5_final_compatible.h5")
+best_model = tf.keras.models.load_model("best_model5_final_compatible_tf2.18.h5")
 
 
 #INTERFACE
