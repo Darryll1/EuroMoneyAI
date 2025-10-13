@@ -27,7 +27,7 @@ url = "https://drive.google.com/uc?id=1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn"
 output = "best_model5_final_compatible.h5"
 gdown.download(url, output, quiet=False)
 
-best_model = tf.keras.models.load_model("best_model5_final_compatible")
+best_model = tf.keras.models.load_model("best_model5_final_compatible.h5")
 
 
 #INTERFACE
