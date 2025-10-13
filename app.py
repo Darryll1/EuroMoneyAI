@@ -26,9 +26,9 @@ int_to_class = {
 
 #Téléchargement du modèle depuis Google Drive car > 100 Mo
 url = "https://drive.google.com/uc?id=19GeWMWHvNWUIzFfhFH1RGjnDLfn2eXcP"  
-model_path = "saved_models/best_model5_trial_18.keras"
+model_path = "saved_models_final/best_model5_final.keras"
 
-os.makedirs("saved_models", exist_ok=True)
+os.makedirs("saved_models_final", exist_ok=True)
 if not os.path.exists(model_path):
     with st.spinner("Téléchargement du modèle depuis Google Drive..."):
         gdown.download(url, model_path, quiet=False)
