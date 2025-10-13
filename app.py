@@ -7,6 +7,9 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import requests
 import os
 import time
+!pip install gdown
+import gdown
+
 
 # Mapping classes
 int_to_class = {0:"10c",1:"1c",2:"1e",3:"20c",4:"2c",5:"2e",6:"50c",7:"5c"}
@@ -15,23 +18,28 @@ int_to_class = {0:"10c",1:"1c",2:"1e",3:"20c",4:"2c",5:"2e",6:"50c",7:"5c"}
 os.makedirs("saved_models", exist_ok=True)
 
 # Lien Google Drive direct vers tes poids du Dense + Dropout
-WEIGHTS_URL = "https://drive.google.com/uc?id=17r6xrf0vM7wNMrPSaGv8xqUV0cuOl6OE"
-WEIGHTS_PATH = "saved_models/model_weights_final.weights.h5"
+
+file_id = "17r6xrf0vM7wNMrPSaGv8xqUV0cuOl6OE"
+output = "saved_models/model_weights_final.weights.h5"
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+
+#WEIGHTS_URL = "https://drive.google.com/uc?id=17r6xrf0vM7wNMrPSaGv8xqUV0cuOl6OE"
+#WEIGHTS_PATH = "saved_models/model_weights_final.weights.h5"
 
 # Télécharger le fichier si absent
 # Télécharger le fichier si absent
-if not os.path.exists(WEIGHTS_PATH):
-    r = requests.get(WEIGHTS_URL, stream=True)
-    r.raise_for_status()
-    with open(WEIGHTS_PATH, "wb") as f:
-        for chunk in r.iter_content(chunk_size=8192):
-            f.write(chunk)
+#if not os.path.exists(WEIGHTS_PATH):
+#    r = requests.get(WEIGHTS_URL, stream=True)
+#    r.raise_for_status()
+#    with open(WEIGHTS_PATH, "wb") as f:
+#        for chunk in r.iter_content(chunk_size=8192):
+#            f.write(chunk)
 
 # Vérifier que le fichier téléchargé est bien un vrai fichier HDF5
-if os.path.exists(WEIGHTS_PATH):
-    size = os.path.getsize(WEIGHTS_PATH)
-    st.write(f"Fichier téléchargé : {WEIGHTS_PATH} ({size/1024:.1f} Ko)")
-    with open(WEIGHTS_PATH, "rb") as f:
+if os.path.exists(output):
+    size = os.path.getsize(output)
+    st.write(f"Fichier téléchargé : {output} ({size/1024:.1f} Ko)")
+    with open(output, "rb") as f:
         st.code(f.read(200))  # affiche les 200 premiers octets
 
 
@@ -56,7 +64,7 @@ best_model = models.Sequential([
 ])
 
 # Charger uniquement les poids du Dense + Dropout
-best_model.load_weights(WEIGHTS_PATH)
+best_model.load_weights(output)
 
 # Interface Streamlit
 st.title("Prédicteur de pièces d'euro")
