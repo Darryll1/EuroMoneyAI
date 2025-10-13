@@ -32,6 +32,8 @@ os.makedirs("saved_models_final", exist_ok=True)
 if not os.path.exists(model_path):
     with st.spinner("Téléchargement du modèle depuis Google Drive..."):
         gdown.download(url, model_path, quiet=False)
+        
+st.write(f"Taille du fichier modèle : {os.path.getsize(model_path) / (1024*1024):.2f} Mo")
 
 # --- Chargement du modèle ---
 best_model = tf.keras.models.load_model(model_path)
