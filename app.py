@@ -7,7 +7,7 @@ import time
 import gdown
 import os
 
-st.write("Version de TensorFlow sur cet environnement :", tf.__version__)
+
 
 int_to_class = {
     0: "10c",
@@ -21,9 +21,9 @@ int_to_class = {
 }
 
 # Charger le meilleur modèle sauvegardé
+#https://drive.google.com/file/d/1IBnroYeiJY_NSDS-DDO0kKYqn-loS6Ic/view?usp=drive_link
 
-
-url = "https://drive.google.com/uc?id=1PYtp5y6hvn0gBeb2oU1ovVHF3EvFPJUn"
+url = "https://drive.google.com/uc?id=1IBnroYeiJY_NSDS-DDO0kKYqn-loS6Ic"
 output = "best_model5_final_compatible.h5"
 gdown.download(url, output, quiet=False)
 
