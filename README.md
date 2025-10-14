@@ -39,6 +39,7 @@ Dense(256, activation='relu')
 Dropout(0.32)
 ↓
 Dense(8, activation='softmax')
+```
 
 # Application de Reconnaissance de Pièces
 
