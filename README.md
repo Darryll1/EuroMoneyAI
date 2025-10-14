@@ -1,4 +1,4 @@
-# 💶 Prédicteur de Pièces d’Euro
+# Prédicteur de Pièces d’Euro
 
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow)
@@ -7,24 +7,24 @@
 
 ---
 
-## 🧠 **Objectif du projet**
+##  **Objectif du projet**
 
 Développer une application d’**intelligence artificielle** capable de reconnaître automatiquement la valeur d’une **pièce d’euro** à partir d’une simple photo.  
 L’application repose sur un modèle de **Deep Learning (VGG16 + couches denses personnalisées)** intégré dans une interface **Streamlit** intuitive.
 
 ---
 
-## ⚙️ **Fonctionnalités principales**
+##  **Fonctionnalités principales**
 
-- 📸 **Téléversement d’image** d’une pièce (formats : `.jpg`, `.jpeg`, `.png`)  
-- 🧠 **Prédiction automatique** de la valeur de la pièce : `1c`, `2c`, `5c`, `10c`, `20c`, `50c`, `1€`, `2€`
-- 📊 **Affichage des probabilités** de chaque classe via un graphique interactif
-- ⚡ **Temps d’inférence** et **niveau de confiance** affichés en direct
-- 🧩 **Téléchargement automatique des poids du modèle** depuis Google Drive
+-  **Téléversement d’image** d’une pièce (formats : `.jpg`, `.jpeg`, `.png`)  
+-  **Prédiction automatique** de la valeur de la pièce : `1c`, `2c`, `5c`, `10c`, `20c`, `50c`, `1€`, `2€`
+-  **Affichage des probabilités** de chaque classe via un graphique interactif
+-  **Temps d’inférence** et **niveau de confiance** affichés en direct
+-  **Téléchargement automatique des poids du modèle** depuis Google Drive
 
 ---
 
-## 🧩 **Architecture du modèle final**
+##  **Architecture du modèle final**
 
 Le modèle final est basé sur **VGG16 (ImageNet)** en *feature extraction* + *fine-tuning* partiel des couches du bloc 5.
 
