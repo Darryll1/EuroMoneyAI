@@ -60,6 +60,11 @@ Durant la phase de recherche, 5 modèles ont été conçus et comparés pour dé
 | 5 | VGG16 Fine-Tuning | Final | ✅ | ✅ | Optuna | ✅ | ✅ | ✅ |
 
 **Résultat :**  
+
+
+![](Comparaison_modèles.png)
+
+
 Le modèle 5 (VGG16 Fine-Tuning) a obtenu la meilleure précision et robustesse, justifiant son intégration dans l’application Streamlit.
 
 ---
