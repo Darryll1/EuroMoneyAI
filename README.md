@@ -1,4 +1,4 @@
-# Prédicteur de Pièces d’Euro
+# Prédiction et Vérification de Monnaie : Pièces d’Euros et Billets Frauduleux
 
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow)
