@@ -85,5 +85,3 @@ if uploaded_file is not None:
 
 else:
     st.info("Téléverse une image pour commencer.")
-
-    st.metric("Temps de prédiction", f"{elapsed:.3f} sec")
