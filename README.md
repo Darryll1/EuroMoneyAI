@@ -59,6 +59,8 @@ Durant la phase de recherche, 5 modèles ont été conçus et comparés pour dé
 | 4 | VGG16 (Feature Extraction + Data Augmentation) | Avancé | ✅ | ✅ | Optuna | ✅ | ❌ | ✅ |
 | 5 | VGG16 Fine-Tuning | Final | ✅ | ✅ | Optuna | ✅ | ✅ | ✅ |
 
+---
+
 **Résultat :**  
 
 
