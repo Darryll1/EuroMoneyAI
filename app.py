@@ -18,14 +18,27 @@ st.set_page_config(
 
 # --- Logo ---
 logo = Image.open("BNSM.png")
-st.image(logo, width=150)
+st.image(logo, width=400, use_column_width=False)  # width = 400 pixels
+st.markdown(
+    """
+    <style>
+    div.stImage > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 st.write("Sélectionnez l'option souhaitée ci-dessous pour analyser un billet ou une pièce.")
 
 # --- Menu navigation ---
 option = st.selectbox("Que voulez-vous faire ?", 
-                      ("Vérifier l'authenticité d'un billet", "Identifier une pièce d'euro"))
+                      (" ","Vérifier l'authenticité d'un billet", "Identifier une pièce d'euro"))
 
 # --- Créer dossier local pour les modèles ---
 os.makedirs("saved_models", exist_ok=True)
