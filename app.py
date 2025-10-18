@@ -18,7 +18,7 @@ st.set_page_config(
 
 # --- Logo ---
 logo = Image.open("BNSM.png") 
-st.image(logo)
+st.image(logo, width=60)
 
 st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 st.write("Sélectionnez l'option souhaitée ci-dessous pour analyser un billet ou une pièce.")
