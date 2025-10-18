@@ -4,4 +4,5 @@ tensorflow
 numpy
 Pillow
 gdown
-joblib
+scikit-learn==1.3.2  
+joblib==1.3.2
