@@ -17,8 +17,7 @@ st.set_page_config(
 )
 
 # --- Logo ---
-logo_url = "https://upload.wikimedia.org/wikipedia/commons/4/44/Bank_logo_example.png"  # Remplace par ton logo
-logo = Image.open(requests.get(logo_url, stream=True).raw)
+logo = Image.open("BNSM.png")
 st.image(logo, width=150)
 
 st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
