@@ -9,19 +9,26 @@
 
 ##  **Objectif du projet**
 
-Développer une application d’**intelligence artificielle** capable de reconnaître automatiquement la valeur d’une **pièce d’euro** à partir d’une simple photo.  
-L’application repose sur un modèle de **Deep Learning (VGG16 + couches denses personnalisées)** intégré dans une interface **Streamlit** intuitive.
+Développer une application d’**intelligence artificielle** permettant :
+
+la **reconnaissance automatique** de la valeur d’une **pièce d’euro** à partir d’une image,
+
+la **détection de faux billets** à partir de leurs caractéristiques dimensionnelles.
+
+L’ensemble est intégré dans une interface **Streamlit unique**, intuitive et accessible via le **cloud**.
 
 ---
 
 ##  **Fonctionnalités principales**
 
--  **Téléversement d’image** d’une pièce (formats : `.jpg`, `.jpeg`, `.png`)  
--  **Prédiction automatique** de la valeur de la pièce : `1c`, `2c`, `5c`, `10c`, `20c`, `50c`, `1€`, `2€`
--  **Affichage des probabilités** de chaque classe via un graphique interactif
+-  **Identification automatique des pièces d’euro** (1c, 2c, 5c, 10c, 20c, 50c, 1€, 2€)
+-  **Vérification d’authenticité des billets** à partir de leurs mesures physiques (diagonal, height_left, etc.)
+-  **Affichage des probabilités** de prédiction et du niveau de confiance
 -  **Temps d’inférence** et **niveau de confiance** affichés en direct
 -  **Téléchargement automatique des poids du modèle** depuis Google Drive
-
+-  **Deux IA complémentaires** :
+    - VGG16 (Deep Learning) pour la **vision par image**
+    -Random Forest (Machine Learning) pour la **détection de contrefaçons**
 ---
 
 ##  **Architecture du modèle final**
