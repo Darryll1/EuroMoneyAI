@@ -7,6 +7,8 @@
 
 ---
 
+![](BNSM.png)
+
 # **Problématique de la Banque Nationale de la Sécurité Monétaire (BNSM)**
 La **BNSM** fait face à une recrudescence de fausse monnaie en circulation, affectant la confiance du public et la stabilité économique.
 Afin d’assurer une **meilleure traçabilité et sécurité** des transactions physiques, la BNSM souhaite développer un **système automatisé** capable de :
