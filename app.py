@@ -21,7 +21,7 @@ st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 
 # --- Logo ---
 logo = Image.open("BNSM.png") 
-st.image(logo, width = 120)
+st.image(logo, use_container_width=True)
 
 st.markdown(
     """
