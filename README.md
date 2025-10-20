@@ -29,7 +29,8 @@ la **reconnaissance automatique** de la valeur d’une **pièce d’euro** à pa
 
 la **détection de faux billets** à partir de leurs caractéristiques dimensionnelles.
 
-L’ensemble est intégré dans une interface **Streamlit unique**, intuitive et accessible via le **cloud**.
+Ces deux modèles sont intégrés dans une seule application **Streamlit** hébergée sur **Streamlit Cloud**.
+
 
 ---
 
