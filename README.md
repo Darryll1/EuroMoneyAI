@@ -100,7 +100,9 @@ Les données ont été :
 - Régression Logistique	
 - Random Forest	
 - XGBoost	
-            
+
+![](Comparaison_modèles_2.png)
+
 Le **Random Forest optimisé** a été retenu pour l’application finale.
             
             
