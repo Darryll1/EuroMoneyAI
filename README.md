@@ -7,9 +7,19 @@
 
 ---
 
-##  **Objectif du projet**
+# **Problématique de la Banque Nationale de la Sécurité Monétaire (BNSM)**
+La **BNSM** fait face à une recrudescence de fausse monnaie en circulation, affectant la confiance du public et la stabilité économique.
+Afin d’assurer une **meilleure traçabilité et sécurité** des transactions physiques, la BNSM souhaite développer un **système automatisé** capable de :
 
-Développer une application d’**intelligence artificielle** permettant :
+- Identifier rapidement la valeur des pièces d’euro à partir d’une image.
+
+- Détecter les faux billets à partir de leurs caractéristiques physiques mesurées.
+
+Ce projet a donc pour but de fournir une solution d’**intelligence artificielle** fiable, rapide et intégrée, utilisable aussi bien dans les guichets automatiques que dans les agences bancaires.
+
+---
+
+##  **Objectif du projet**
 
 la **reconnaissance automatique** de la valeur d’une **pièce d’euro** à partir d’une image,
 
@@ -101,7 +111,8 @@ Les données ont été :
 - Random Forest	
 - XGBoost	
 
-![](Comparaison_modèles_détection_faux_billets.png)
+<img src="Comparaison_modèles_détection_faux_billets.png" style="width:40%; display:block; margin:auto;">
+
 
 Le **Random Forest optimisé** a été retenu pour l’application finale.
             
