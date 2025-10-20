@@ -72,7 +72,7 @@ Durant la phase de recherche, 5 modèles ont été conçus et comparés pour dé
 ## **Résultat :**  
             
             
-![](Comparaison_modèles.png)
+![](Comparaison_modèles_détection_euro.png)
             
             
 Le modèle 5 **(VGG16 Fine-Tuning)** a obtenu la meilleure précision et robustesse, justifiant son intégration dans l’application Streamlit.
@@ -101,7 +101,7 @@ Les données ont été :
 - Random Forest	
 - XGBoost	
 
-![](Comparaison_modèles_2.png)
+![](Comparaison_modèles_détection_faux_billets.png)
 
 Le **Random Forest optimisé** a été retenu pour l’application finale.
             
