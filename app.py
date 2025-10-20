@@ -23,15 +23,6 @@ st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 logo = Image.open("BNSM.png") 
 st.image(logo, use_container_width=True)
 
-st.markdown(
-    """
-    <p align="center">
-        <img src="BNSM.png" width="60%">
-    </p>
-    """,
-    unsafe_allow_html=True
-)
-
 
 st.write("Sélectionnez l'option souhaitée ci-dessous pour analyser un billet ou une pièce.")
 
