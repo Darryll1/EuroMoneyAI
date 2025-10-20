@@ -7,7 +7,9 @@
 
 ---
 
-<img src="BNSM.png" style="width:70%;">
+<p align="center">
+  <img src="BNSM.png" style="width:50%;">
+</p>
 
 # **Problématique de la Banque Nationale de la Sécurité Monétaire (BNSM)**
 La **BNSM** fait face à une recrudescence de fausse monnaie en circulation, affectant la confiance du public et la stabilité économique.
