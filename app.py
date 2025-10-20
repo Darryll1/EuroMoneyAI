@@ -23,6 +23,16 @@ st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 logo = Image.open("BNSM.png") 
 st.image(logo, width = 120)
 
+st.markdown(
+    """
+    <p align="center">
+        <img src="Comparaison_modèles_détection_faux_billets.png" width="60%">
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.write("Sélectionnez l'option souhaitée ci-dessous pour analyser un billet ou une pièce.")
 
 # --- Menu navigation ---
