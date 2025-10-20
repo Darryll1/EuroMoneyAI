@@ -32,7 +32,7 @@ L’ensemble est intégré dans une interface **Streamlit unique**, intuitive et
 ---
 
 ##  **Architecture des modèle finaux**
-### **1. Reconnaissance automatique de la valeur d’une pièce d’euro**
+## **1. Reconnaissance automatique de la valeur d’une pièce d’euro**
 
 Le modèle final est basé sur **VGG16 (ImageNet)** en *feature extraction* + *fine-tuning* partiel des couches du bloc 5.
             
@@ -76,9 +76,10 @@ Durant la phase de recherche, 5 modèles ont été conçus et comparés pour dé
             
             
 Le modèle 5 **(VGG16 Fine-Tuning)** a obtenu la meilleure précision et robustesse, justifiant son intégration dans l’application Streamlit.
-            
 
-### **2. La détection de faux billets à partir de leurs caractéristiques dimensionnelles**
+---
+
+## **2. La détection de faux billets à partir de leurs caractéristiques dimensionnelles**
 
 **Variables** : diagonal, height_left, height_right, margin_low, margin_up, length
             
@@ -123,6 +124,8 @@ L’application propose un menu de navigation pour choisir entre les deux module
 |-------------------------------------|----------------------------------------------------------------|
 | Vérifier l'authenticité d'un billet |	Entrée manuelle des dimensions → Prédiction "Vrai" ou "Faux"   |
 |Identifier une pièce d’euro	      |Téléversement d’une image → Prédiction automatique de la valeur |
+
+---
 
 ## Technologies utilisées
 
