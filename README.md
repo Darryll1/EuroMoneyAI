@@ -104,12 +104,13 @@ Le **Random Forest optimisé** a été retenu pour l’application finale.
             
             
 **Structure simplifiée du pipeline**
-            
+```           
 StandardScaler()
 ↓
-RandomForestClassifier(n_estimators=200, max_depth=10, random_state=42)
+RandomForestClassifier
 ↓
 Prédiction : 1 (vrai) / 0 (faux)
+```
             
 Ces modèles sont automatiquement téléchargés depuis Google Drive au lancement.
             
