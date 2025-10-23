@@ -17,7 +17,7 @@ st.set_page_config(
 )
 
 
-st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
+st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire")
 
 
 # --- Logo centré ---
