@@ -19,9 +19,6 @@ st.set_page_config(
 
 st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 
-# --- Logo ---
-#logo = Image.open("BNSM.png") 
-#st.image(logo, use_container_width=True)
 
 # --- Logo centré ---
 col_g, col_c, col_d = st.columns([1, 1, 1])  # symétrique = centre exact
@@ -55,6 +52,9 @@ else:
         margin_low = st.number_input("Margin Low", min_value=0.0, max_value=10.0, value=4.52)
         margin_up = st.number_input("Margin Up", min_value=0.0, max_value=10.0, value=2.89)
         length = st.number_input("Length", min_value=0.0, max_value=200.0, value=112.83)
+
+        st.markdown("<div style='margin-bottom: 200px;'></div>", unsafe_allow_html=True)
+
         
         # Télécharger modèles si pas déjà
         scaler_id = "18JiwJMmIQNxPb08VipBrw0lWcAxDSRaq"
