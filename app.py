@@ -20,8 +20,15 @@ st.set_page_config(
 st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 
 # --- Logo ---
-logo = Image.open("BNSM.png") 
-st.image(logo, use_container_width=True)
+#logo = Image.open("BNSM.png") 
+#st.image(logo, use_container_width=True)
+
+# --- Logo centré et redimensionné ---
+col1, col2, col3 = st.columns([1, 2, 1])  # colonnes pour centrer
+with col2:
+    logo = Image.open("BNSM.png")
+    st.image(logo, width=300)  # ajuste la taille selon ton besoin
+
 
 
 st.write("Sélectionnez l'option souhaitée ci-dessous pour analyser un billet ou une pièce.")
