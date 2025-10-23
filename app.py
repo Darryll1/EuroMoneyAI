@@ -23,11 +23,12 @@ st.title("Bienvenue à la Banque Nationale de Sécurité Monétaire (BNSM)")
 #logo = Image.open("BNSM.png") 
 #st.image(logo, use_container_width=True)
 
-# --- Logo centré et redimensionné ---
-col1, col2, col3 = st.columns([1, 2, 1])  # colonnes pour centrer
-with col2:
+# --- Logo centré ---
+col_g, col_c, col_d = st.columns([1, 1, 1])  # symétrique = centre exact
+with col_c:
     logo = Image.open("BNSM.png")
-    st.image(logo, width=300)  # ajuste la taille selon ton besoin
+    st.image(logo, width=300)  # ajuste la largeur
+
 
 
 
